@@ -10,24 +10,7 @@
   
 </head>
 <body><a-scene background="color:#ECECEC" class="fullscreen" rotation="0 90 0" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="">
-  <a-entity>
-    <a-cursor></a-cursor>
-    <a-cylinder id="water-cup" position="0.7 0.23521 -4.882" radius="0.5" height="2.5" color="#f0decc" shadow="" material="" geometry="" scale="0.3 0.3 0.3"></a-cylinder>
-    <!-- <a-cylinder position="-0.028 0.35 -4.782" radius="0.5" height="1.3" color="#ae4300" shadow="" material="" geometry="" scale="0.3 0.3 0.3"></a-cylinder> -->
-    <!-- <a-cylinder position="-0.028 0.35 -4.282" radius="0.5" height="1.3" color="#be4521" shadow="" material="" geometry="" scale="0.3 0.3 0.3"></a-cylinder>
-    <a-cylinder position="-0.028 0.35 -3.782" radius="0.5" height="1.3" color="#830009" shadow="" material="" geometry="" scale="0.3 0.3 0.3"></a-cylinder>
-    <a-cylinder position="-0.028 0.35 -3.282" radius="0.5" height="1.3" color="#b86712" shadow="" material="" geometry="" scale="0.3 0.3 0.3"></a-cylinder> -->
-    <a-plane id="desk" position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#672d19" shadow="" material="" geometry=""></a-plane>
-
-    <a-box id="cupholder" position="-0.01 0.075 -4" rotation="-90 0 0" width="0.8" depth="0.15"height="2" color="#7f5035" shadow="" material="color:#7f5035" geometry=""></a-box>
-    <a-cylinder position="-0.42734 0.12846 -3.74918" rotation="0 0 52" radius="0.5" height="1.4" color="#FFC65D" shadow="" material="color:#f4d7b5;emissive:#4b4a4b" geometry="height:0.001" scale="0.3 0.3 0.3" id="card"></a-cylinder>
-    <a-entity id='cameraWrapper'wsad-controls position="0 0 0">
-
-      <a-camera raycaster="" crawling-cursor="offset:0.01;target:#null"  position="0 1.7 0" rotation="0 0 0"  look-controls data-aframe-inspector-original-camera=""></a-camera>
-  </a-entity>
-    <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" shadow="" material="color:#502216" geometry=""></a-plane>
-    <a-entity text="value:Yuanze Zhang;color:#000000;align:center" rotation="-52 -90 0" position="-0.43 0.141 -3.75"></a-entity>
-    <a-assets>
+  <a-assets>
       <!-- model from https://3dwarehouse.sketchup.com/model/u47f60489-679a-4064-96d4-347f8f44dfa0/13oz-Libbey-Belgian-Snifter -->
       <a-asset-item id="cup_mesh" src="model/beer_cup.obj"></a-asset-item>
       <a-asset-item id="cup_mtl" src="model/beer_cup.mtl"></a-asset-item>
@@ -40,6 +23,26 @@
       <a-asset-item id="content_mesh4" src="model/beer_content4.obj"></a-asset-item>
       <a-asset-item id="content_mtl4" src="model/beer_content4.mtl"></a-asset-item>
     </a-assets>
+  <a-cursor></a-cursor>
+  <a-entity id='cameraWrapper'wsad-controls position="0 0 0">
+
+      <a-camera raycaster="" crawling-cursor="offset:0.01;target:#null"  position="0 1.7 0" rotation="0 0 0"  look-controls data-aframe-inspector-original-camera=""></a-camera>
+  </a-entity>
+  <a-entity rotation="0 90 0" position="3 0 0">
+    
+    <a-cylinder id="water-cup" position="0.7 0.23521 -4.882" radius="0.5" height="2.5" color="#f0decc" shadow="" material="" geometry="" scale="0.3 0.3 0.3"></a-cylinder>
+    <!-- <a-cylinder position="-0.028 0.35 -4.782" radius="0.5" height="1.3" color="#ae4300" shadow="" material="" geometry="" scale="0.3 0.3 0.3"></a-cylinder> -->
+    <!-- <a-cylinder position="-0.028 0.35 -4.282" radius="0.5" height="1.3" color="#be4521" shadow="" material="" geometry="" scale="0.3 0.3 0.3"></a-cylinder>
+    <a-cylinder position="-0.028 0.35 -3.782" radius="0.5" height="1.3" color="#830009" shadow="" material="" geometry="" scale="0.3 0.3 0.3"></a-cylinder>
+    <a-cylinder position="-0.028 0.35 -3.282" radius="0.5" height="1.3" color="#b86712" shadow="" material="" geometry="" scale="0.3 0.3 0.3"></a-cylinder> -->
+    <a-plane id="desk" position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#672d19" shadow="" material="" geometry=""></a-plane>
+
+    <a-box id="cupholder" position="-0.01 0.075 -4" rotation="-90 0 0" width="0.8" depth="0.15"height="2" color="#7f5035" shadow="" material="color:#7f5035" geometry=""></a-box>
+    <a-cylinder position="-0.42734 0.12846 -3.74918" rotation="0 0 52" radius="0.5" height="1.4" color="#FFC65D" shadow="" material="color:#f4d7b5;emissive:#4b4a4b" geometry="height:0.001" scale="0.3 0.3 0.3" id="card"></a-cylinder>
+    
+    <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" shadow="" material="color:#502216" geometry=""></a-plane>
+    <a-entity text="value:Yuanze Zhang;color:#000000;align:center" rotation="-52 -90 0" position="-0.43 0.141 -3.75"></a-entity>
+    
     <a-entity position="0, 0.145 -4.9" scale="0.1 0.1 0.1">
       <a-entity position="0 0 0" obj-model="obj: #cup_mesh; mtl: #cup_mtl"></a-entity>
       <a-entity position="0.516 1.402 0.190" obj-model="obj: #content_mesh1; mtl: #content_mtl1"></a-entity>
